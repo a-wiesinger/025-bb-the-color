@@ -1,17 +1,15 @@
 ﻿// The Color
 // :: Static ::
 
-using System.Threading.Channels;
 using  _025_bb_the_color.Models;
 
 Console.Title = "The Color";
 Console.Clear();
 
-// Vars
-Color customColor = new Color(123, 5, 234); // Const instance
-Color presetColor = Color.White; // TODO
+// Variables
+Color customColor = new Color(123, 5, 234);
+Color presetColor = Color.PresetGreen; // Change property to access diff colors
 
 // Display result
-Console.WriteLine($"{customColor.CustomRed}, {customColor.CustomGreen}, {customColor.CustomBlue}");
-Console.WriteLine(presetColor); // TODO
-// Need to use a static property for the presetColor var
+Console.WriteLine($"Custom: {customColor.Red}, {customColor.Green}, {customColor.Blue}");
+Console.WriteLine($"Preset: {presetColor.Red}, {presetColor.Green}, {presetColor.Blue}");
